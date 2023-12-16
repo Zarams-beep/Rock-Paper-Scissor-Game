@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>graphic game</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href="rock paper scissor.css">
+        <script src="rock paper scissor.js" defer></script>
+    
+    </head>
+<body>
+<div>
+    <p class="header">Rock Paper Scissors</p>
+
+    <button class="move-button">
+    <img src="rock-emoji.png" onclick="pickComputerMove()
+    playerMove('rock')"></button>
+   
+    <button class="move-button">
+    <img src="paper-emoji.png" onclick="pickComputerMove()        
+    playerMove('paper')"></button>
+
+    <button class="move-button">
+    <img src="scissors-emoji.png" onclick="pickComputerMove()
+    playerMove('scissors')"></button>
+
+    <p class="is-result js-result "></p>
+    <p class="js-moves">
+        </p>
+    <p class="js-score score"></p>
+
+    <button class="reset-button" onclick="score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScore()
+    ">Reset Score</button>
+
+    <p><a href="DOM.html">Click here</a> to see the final version of the project.</p>
+</div>
+</body>
+</html>
